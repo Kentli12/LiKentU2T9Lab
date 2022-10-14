@@ -32,3 +32,4 @@ public class LuckyNumbers
         /* implement this method!  */
     }
 }
+//ok
