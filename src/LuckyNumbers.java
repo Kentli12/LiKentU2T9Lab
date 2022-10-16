@@ -9,7 +9,8 @@ public class LuckyNumbers
        and returns that random number
      */
     public int randomIntegerBetween(int min, int max) {
-        /* implement this method!  */
+      int ranNum = (int) (Math.random() * (max - min + 1)) + min;
+      return ranNum;
     }
 
     /* Generates and returns a String containing lucky numbers!
@@ -29,7 +30,14 @@ public class LuckyNumbers
         use your method!
       */
     public String getLuckyNumbers() {
-        /* implement this method!  */
+        int Num1 = randomIntegerBetween(1,65);
+        int Num2 = randomIntegerBetween(1,65);
+        int Num3 = randomIntegerBetween(1,65);
+        int Num4 = randomIntegerBetween(1,65);
+        int Num5 = randomIntegerBetween(1,65);
+        int Num6 = randomIntegerBetween(1,30);
+
+        String str = ("Your lucky numbers are: " + Num1 + " " + Num2 + " " + Num3 + " " + Num4 + " " + Num5 + "\n" + "The super ball is: " + Num6);
+        return str;
     }
 }
-//ok
